@@ -5,4 +5,18 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Maven Pro','Noto Sans KR', sans-serif;
+	/* 글꼴의 경우 직접추가 혹은 가져다쓰기 가능. */
+}
+
+/* pc 스타일
+
+	1. 스타일 초기화: 직접? 아님 초기값 가지고?
+	2. 레이아웃 관련 공통 스타일, 구역별 세부 스타일 구분
+	3. 레이아웃 기법: 여러가지~ 어떤 것을 어떻게 사용할지
+
+ */
