@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+:root {
+	--main-font-color: #000;
+	--main-link-color: #666;
+}
 /* pc 스타일
 
 	1. 스타일 초기화: 직접?[v] 아님 초기값 가지고?
@@ -23,7 +26,21 @@ body {
 	/* 글꼴의 경우 직접추가 혹은 가져다쓰기 가능. */
 }
 
+a, a:link {
+	color: inherit;
+	text-decoration: none;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: #000;
+}
+
 /* ======================= 01. 공통 클래스 정의 ======================= */
+.d.none {
+	display: none;
+}
 
 .d-flex {
 	display: flex;
@@ -57,8 +74,40 @@ body {
 	margin: 0 auto;
 }
 
+.mx-10 {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.gap-1 {
+	gap: 1rem;
+}
+
+.gap-2 {
+	gap: 2rem;
+}
+
+.gap-3 {
+	gap: 3rem;
+}
+
+.border-top-thin {
+	border-top: 1px solid #000;
+}
+
+
+
 /* ======================= 02. 세부 클래스 정의 ======================= */
 
 
 
 /* ======================= 02-1. header 클래스 정의 ======================= */
+
+.links {
+	font-size: 14px;
+	color: var(--main-link-color);
+}
+
+/* ======================= 02-2. section 클래스 정의 ======================= */
+
+/* ======================= 02-3. footer 클래스 정의 ======================= */
