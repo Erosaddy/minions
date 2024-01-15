@@ -8,7 +8,7 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: 20px;
 }
 /* pc 스타일
 
@@ -50,7 +50,11 @@ hr {
 	position: absolute;
 }
 
-/* ======================= 01. 공통 클래스 정의 ======================= */
+/* ======================= 01. 레이아웃 공통 클래스 정의 ======================= */
+.text-center {
+	text-align: center;
+}
+
 .d.none {
 	display: none;
 }
@@ -59,8 +63,9 @@ hr {
 	display: flex;
 }
 
+
 .container {
-	max-width: 920px; /* 요즘은 1200쯤 한다 요건 좀 작은 편 */
+	max-width: 1000px; /* 요즘은 1200쯤 한다 요건 좀 작은 편 */
 }
 
 .justify-center {
@@ -92,6 +97,38 @@ hr {
 	margin-left: 10px;
 }
 
+.mt-1 {
+	margin-top: 1rem;
+}
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.mt-3 {
+	margin-top: 3rem;
+}
+
+.mt-4 {
+	margin-top: 4rem;
+}
+
+.mt-5 {
+	margin-top: 5rem;
+}
+
+.mb-1 {
+	margin-bottom: 1rem;
+}
+
+.mb-2 {
+	margin-bottom: 2rem;
+}
+
+.mb-3 {
+	margin-bottom: 3rem;
+}
+
 .gap-1 {
 	gap: 1rem;
 }
@@ -105,6 +142,10 @@ hr {
 }
 
 .border-top-thin {
+	border-top: 1px solid #000;
+}
+
+.border-left-thin {
 	border-top: 1px solid #000;
 }
 
@@ -128,7 +169,7 @@ hr {
 /* ======================= 02-1-1. navigation 클래스 정의 ======================= */
 
 .main_nav {
-	font-size: 1.125rem;
+	font-size: 0.9rem;
 	font-weight: 700;
 	color: var(--main-font-color);
 }
@@ -138,13 +179,7 @@ hr {
 }
 
 
-/* ======================= 02-2. section 아이디 정의 ======================= */
-
-
-
-/* ======================= 02-2-1. trailer 아이디 정의 ======================= */
-
-
+/* ======================= 02-2. trailer 아이디 정의 ======================= */
 
 #trailer {
 	
@@ -170,9 +205,30 @@ hr {
 	overflow: hidden;
 }
 
-.youtubeWrap .ifrmae, {
-	
+.youtubeWrap iframe,.youtubeWrap object,.youtubeWrap embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
+/* ======================= 04. main > article ====================== */
+
+main h2 {
+	font-size: 1.5rem;
+	color: var(--main-font-color);
+	font-weight: 900;
+	text-transform: capitalize
+}
+.character {
+	text-align: center;
+	border: 1px solid var(--main-font-color); /* 색상변수. 같은 색상 여러 번 쓸때 한 번에 바꾸기 용이하다. */
+	flex: 1; /* 몇개 항목이 있든 1:1:1 요 비율로 ㄱㄱ */
+}
+
+.character img {
+	text-align: center;
+}
 
 /* ======================= 02-3. footer 클래스 정의 ======================= */
