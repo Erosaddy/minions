@@ -41,7 +41,7 @@ a, a:link {
 hr {
 	border: 0;
 	height: 2px;
-	background-color: var(--main-font-color;)
+	background-color: var(--main-font-color);
 	position: relative;
 	top: -5px;
 }
@@ -121,7 +121,11 @@ hr {
 	color: var(--main-link-color);
 }
 
-/* ======================= 02-1-1. nav 클래스 정의 ======================= */
+.links a:hover {
+	color: var(--base-font-color);
+}
+
+/* ======================= 02-1-1. navigation 클래스 정의 ======================= */
 
 .main_nav {
 	font-size: 1.125rem;
@@ -133,6 +137,42 @@ hr {
 	color: var(--base-font-color);
 }
 
-/* ======================= 02-2. section 클래스 정의 ======================= */
+
+/* ======================= 02-2. section 아이디 정의 ======================= */
+
+
+
+/* ======================= 02-2-1. trailer 아이디 정의 ======================= */
+
+
+
+#trailer {
+	
+}
+
+.devils {
+	z-index: 10;
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%);
+}
+
+.devils:visited, .devils: hover {
+	display:none;
+	
+}
+
+.youtubeWrap {
+	position: relative;
+	hegith: 0;
+	padding-top: 0ox;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+.youtubeWrap .ifrmae, {
+	
+}
+
 
 /* ======================= 02-3. footer 클래스 정의 ======================= */
