@@ -231,4 +231,10 @@ main h2 {
 	text-align: center;
 }
 
+/* ======================= 05. main > aside ====================== */
+aside {
+	background-color: var(--main-font-color)
+}
+
+
 /* ======================= 02-3. footer 클래스 정의 ======================= */
