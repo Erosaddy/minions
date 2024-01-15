@@ -1,7 +1,14 @@
 @charset "UTF-8";
-:root {
-	--main-font-color: #000;
+:root { /* 변수선언 */
+	--base-font-color: #000;
+	--main-font-color: #f9c02d;
 	--main-link-color: #666;
+	--base-font-size: 16px;
+	--point-font-size: 20px;
+}
+
+html {
+	font-size: 16px;
 }
 /* pc 스타일
 
@@ -33,8 +40,14 @@ a, a:link {
 
 hr {
 	border: 0;
-	height: 1px;
-	background-color: #000;
+	height: 2px;
+	background-color: var(--main-font-color;)
+	position: relative;
+	top: -5px;
+}
+
+.pos-absolute {
+	position: absolute;
 }
 
 /* ======================= 01. 공통 클래스 정의 ======================= */
@@ -106,6 +119,18 @@ hr {
 .links {
 	font-size: 14px;
 	color: var(--main-link-color);
+}
+
+/* ======================= 02-1-1. nav 클래스 정의 ======================= */
+
+.main_nav {
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: var(--main-font-color);
+}
+
+.main_nav a:hover {
+	color: var(--base-font-color);
 }
 
 /* ======================= 02-2. section 클래스 정의 ======================= */
