@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 360px) {
+
+header > .container {
+	position: relative;
+	align-items: flex-start;
+}
+	
+.header-logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: 235px;
+}
+	
+.header-logo img {
+	width: 100%;
+	object-fit: cover; /* 이미지 크기 비율 자동 알맞게 조정하는 속성 */
+}
+	
+.gap-1 {
+	gap: .5rem
+}
+	
+.main_nav > .container {
+	flex-direction: column;
+	gap: 0;
+	text-align: center;
+}
+	
+.main_nav a {
+	flex-shrink: 1;
+	flex-grow: 1;
+	flex-basis: auto;
+	background-color: var(--main-font-color);
+	color: var(--base-font-color);
+	height: 50px;
+	line-height: 50px;
+}
+	
+header .container{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	height: 143px;
+	box-sizing: border-box;
+}
+	
+.main-nav a:hover {
+	background-color: black;
+}
+	
+main, aside, footer, #trailer {
+	display: none;}
+}
