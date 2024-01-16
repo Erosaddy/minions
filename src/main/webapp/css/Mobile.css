@@ -23,21 +23,30 @@ header > .container {
 .gap-1 {
 	gap: .5rem
 }
+
+.main_nav {
+	top: 10px;
+}
 	
 .main_nav > .container {
 	flex-direction: column;
 	gap: 0;
-	text-align: center;
+	text-align: left;
+	gap: .1rem;
 }
 	
-.main_nav a {
-	flex-shrink: 1;
-	flex-grow: 1;
-	flex-basis: auto;
+.main_nav > .container a {
+	flex-direction: column;
 	background-color: var(--main-font-color);
-	color: var(--base-font-color);
+	color: #ffffff;
 	height: 50px;
 	line-height: 50px;
+	display: block;
+	width: 100%;
+	background-image: url("images/nav_down_arrow_white.jpg");
+	background-position: right;
+	background-position: center;
+/*	background: no-repeat;	*/
 }
 	
 header .container{
